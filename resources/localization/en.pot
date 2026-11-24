@@ -1,6 +1,6 @@
-# LANGUAGE translation for godot-game-template for the following files:
+# LANGUAGE translation for sadsha-ggt-starter for the following files:
 # res://scenes/menu/menu.tscn
-# res://addons/ggt-core/settings/settings_menu.tscn
+# res://addons/sadsha-ggt-core/settings/settings_menu.tscn
 # res://scenes/gameplay/pause-layer/pause-layer.tscn
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -8,13 +8,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: godot-game-template\n"
+"Project-Id-Version: sadsha-ggt-starter\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: scenes/menu/menu.tscn
-msgid "Godot Game Template"
+msgid "SadSha GGT Starter"
 msgstr ""
 
 #: scenes/menu/menu.tscn
@@ -34,77 +34,77 @@ msgstr ""
 msgid "made by: "
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Settings"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "GAME"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Language"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "AUDIO"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Volume/Master"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Volume/SFX"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Volume/Music"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "GRAPHICS"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Resolution scale 3D"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Fullscreen"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "VSync"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "FPS Limit"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Cancel"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Reset default"
 msgstr ""
 
-#: addons/ggt-core/settings/settings_menu.tscn
+#: addons/sadsha-ggt-core/settings/settings_menu.tscn
 msgctxt "menu"
 msgid "Confirm"
 msgstr ""
@@ -121,5 +121,5 @@ msgstr ""
 msgid "Pause: ESC (keyboard) or START button (joypad)"
 msgstr ""
 
-msgid "godot-game-template"
+msgid "sadsha-ggt-starter"
 msgstr ""

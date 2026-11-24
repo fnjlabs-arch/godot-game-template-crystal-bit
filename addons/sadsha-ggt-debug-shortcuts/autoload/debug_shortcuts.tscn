@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dwudswealbjw5"]
 
-[ext_resource type="Script" uid="uid://cwg070drxkjf2" path="res://addons/ggt-debug-shortcuts/autoload/debug_shortcuts.gd" id="1_h8jbq"]
+[ext_resource type="Script" uid="uid://cwg070drxkjf2" path="res://addons/sadsha-ggt-debug-shortcuts/autoload/debug_shortcuts.gd" id="1_h8jbq"]
 
 [node name="DebugShortcuts" type="Node" unique_id=1359821396]
 process_mode = 3

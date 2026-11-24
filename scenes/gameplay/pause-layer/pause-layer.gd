@@ -66,7 +66,7 @@ func _on_PauseButton_pressed():
 
 
 func _on_main_menu_pressed():
-	GGT.change_scene("res://scenes/menu/menu.tscn", {"show_progress_bar": false})
+	SadShaGGT.change_scene("res://scenes/menu/menu.tscn", {"show_progress_bar": false})
 
 
 func _on_settings_pressed() -> void:

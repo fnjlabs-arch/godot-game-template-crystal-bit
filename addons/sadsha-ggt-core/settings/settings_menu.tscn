@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2jxemjmao00b"]
 
-[ext_resource type="Script" uid="uid://d0v8k80aietn" path="res://addons/ggt-core/settings/settings_menu.gd" id="1_25law"]
-[ext_resource type="PackedScene" uid="uid://b8y8u6k8j8p8" path="res://addons/ggt-core/settings/confirmation_modal.tscn" id="3_modal"]
+[ext_resource type="Script" uid="uid://d0v8k80aietn" path="res://addons/sadsha-ggt-core/settings/settings_menu.gd" id="1_25law"]
+[ext_resource type="PackedScene" uid="uid://b8y8u6k8j8p8" path="res://addons/sadsha-ggt-core/settings/confirmation_modal.tscn" id="3_modal"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_r8yej"]
 font_size = 64

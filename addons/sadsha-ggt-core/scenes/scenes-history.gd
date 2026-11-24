@@ -1,11 +1,11 @@
 extends RefCounted
 
-const config = preload("res://addons/ggt-core/config.tres")
-var _history: Array[GGT_SceneData] = []
+const config = preload("res://addons/sadsha-ggt-core/config.tres")
+var _history: Array[SadShaGGT_SceneData] = []
 
 
 func add(scene_path: String, params = null):
-	var data = GGT_SceneData.new()
+	var data = SadShaGGT_SceneData.new()
 	data.path = scene_path
 	data.params = params
 	_history.push_front(data)
@@ -13,7 +13,7 @@ func add(scene_path: String, params = null):
 		_history.pop_back()
 
 
-func get_last_loaded_scene_data() -> GGT_SceneData:
+func get_last_loaded_scene_data() -> SadShaGGT_SceneData:
 	if _history.size() == 0:
 		return null
 	return _history[0]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2gocuhw2o7py"]
 
-[ext_resource type="PackedScene" uid="uid://c2jxemjmao00b" path="res://addons/ggt-core/settings/settings_menu.tscn" id="3_e0arn"]
+[ext_resource type="PackedScene" uid="uid://c2jxemjmao00b" path="res://addons/sadsha-ggt-core/settings/settings_menu.tscn" id="3_e0arn"]
 [ext_resource type="FontFile" uid="uid://da2t6lyf41wty" path="res://assets/fonts/open-sans/open-sans-bold.ttf" id="4"]
 [ext_resource type="Script" uid="uid://cvc42inud8fxx" path="res://scenes/menu/menu.gd" id="5"]
 
@@ -53,7 +53,7 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4")
 theme_override_font_sizes/font_size = 60
-text = "Godot Game Template"
+text = "SadSha GGT Starter"
 uppercase = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Control" unique_id=737419068]
@@ -167,7 +167,7 @@ layout_mode = 2
 [node name="RichTextLabel" type="RichTextLabel" parent="Help/MarginContainer" unique_id=1170172205]
 layout_mode = 2
 bbcode_enabled = true
-text = "Welcome to the [b]Godot Game Template[/b], [color=#7af]GGT[/color] in short!
+text = "Welcome to the [b]SadSha GGT Starter[/b], [color=#7af]SadShaGGT[/color] in short!
 
 Some debug shortcuts that you can use are:
 

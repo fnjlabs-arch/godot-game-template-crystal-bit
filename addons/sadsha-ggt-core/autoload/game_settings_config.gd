@@ -1,4 +1,4 @@
-## GGT_GameConfig autoload
+## SadShaGGT_GameConfig autoload
 extends Node
 
 const CONFIG_FILE_PATH = &"user://settings.cfg"

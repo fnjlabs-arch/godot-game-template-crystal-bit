@@ -7,19 +7,18 @@
     <img alt="Godot Download badge" src="https://img.shields.io/badge/godot-4.7-blue">
   </a>
 
-  <a href="https://github.com/crystal-bit/godot-game-template/releases">
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/crystal-bit/godot-game-template">
+  <a href="https://github.com/fnjlabs-arch/godot-game-template-crystal-bit/releases">
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/fnjlabs-arch/godot-game-template-crystal-bit">
   </a>
 </p>
 
-**Godot Game Template**, also GGT in short, is a simple generic starter project for Godot games.
+**SadSha GGT Starter**, also SadShaGGT in short, is a simple generic starter project for Godot games.
 
 Provides a solid base for quick iterations.
 
 It worked well when used by small teams in game jams, but it should be generic
 enough to work for mid sized teams as well.
 
-Online demo available on → https://crystalbit.itch.io/godot-game-template
 
 https://github.com/user-attachments/assets/1f647a5d-5047-40eb-b3c2-7142312459c3
 
@@ -35,13 +34,13 @@ https://github.com/user-attachments/assets/1f647a5d-5047-40eb-b3c2-7142312459c3
 | <img src="https://github.com/user-attachments/assets/80bc19b6-8911-40ad-9214-90f84f9d7dc9" alt="Pangolick Quest icon" width=100 />          | 4.4.1 | **Pangolick Quest** (2025) | HTML5, Windows, Linux, OSX [Itch.io](https://havbit.itch.io/pangolick-quest)                                                           |
 # Features Overview
 
-GGT is composed of multiple parts:
+SadShaGGT is composed of multiple parts:
 
-1.  **ggt-core** addon
-2.  **ggt-shortcuts** addon
+1.  **sadsha-ggt-core** addon
+2.  **sadsha-ggt-debug-shortcuts** addon
 3.  Godot project boilerplate (this repository)
 
-**ggt-core** provides:
+**sadsha-ggt-core** provides:
 
 - Scene management with transitions and optional progress bar
 - Parameter passing between scenes
@@ -52,7 +51,7 @@ GGT is composed of multiple parts:
 - gettext (.pot) localization setup with 2 languages (English, Italian). Feel free to add new languages via PR
   - bash script to sync all .po files with a single command 
 
-**ggt-shortcuts** provides:
+**sadsha-ggt-debug-shortcuts** provides:
 
 - Debug shortcuts mapped to keyboard keys for restart (R), pause frame (P), advance frame (.), speed up time scale (SHIFT), quit (Q)
   - easily configurable via Godot Input Map
@@ -74,13 +73,13 @@ You have 2 options:
 
 ## 1. Get started with Github Templates:
 
-1. [Create a new repo using this template](https://github.com/crystal-bit/godot-game-template/generate)
+1. [Create a new repo using this template](https://github.com/fnjlabs-arch/godot-game-template-crystal-bit/generate)
 2. Clone the new repository locally
 3. Open the project in [Godot](https://godotengine.org/download/) (GDScript)
 
 ## 2. Get started with a local project:
 
-1. Go to https://github.com/crystal-bit/godot-game-template/releases
+1. Go to https://github.com/fnjlabs-arch/godot-game-template-crystal-bit/releases
 2. Download _Source code (zip)_
 3. Unzip the project
 4. Open the project in [Godot Engine](https://godotengine.org/download/) (GDScript) and create your game!
@@ -90,7 +89,7 @@ You have 2 options:
 ## Change scene
 
 ```gdscript
-GGT.change_scene("res://scenes/gameplay/gameplay.tscn")
+SadShaGGT.change_scene("res://scenes/gameplay/gameplay.tscn")
 ```
 
 ![change_scene](https://user-images.githubusercontent.com/6860637/162567110-026c1979-6237-4255-bb2a-97815fc4b0c4.gif)
@@ -98,7 +97,7 @@ GGT.change_scene("res://scenes/gameplay/gameplay.tscn")
 ## Change scene and show progress bar
 
 ```gdscript
-GGT.change_scene("res://scenes/gameplay/gameplay.tscn", {
+SadShaGGT.change_scene("res://scenes/gameplay/gameplay.tscn", {
   "show_progress_bar": true
 })
 ```
@@ -112,7 +111,7 @@ var params = {
   "level": 4,
   "skin": "dark"
 }
-GGT.change_scene("res://scenes/gameplay/gameplay.tscn", params)
+SadShaGGT.change_scene("res://scenes/gameplay/gameplay.tscn", params)
 ```
 
 Nodes in the loaded scene can read params with:
@@ -121,7 +120,7 @@ Nodes in the loaded scene can read params with:
 # gameplay.gd
 
 func _ready():
-    var params = GGT.get_current_scene_data().params
+    var params = SadShaGGT.get_current_scene_data().params
     print(params.level) # 4
     print(params.skin)  # 'dark'
    # setup your scene here
@@ -137,8 +136,8 @@ can use this approach:
 # gameplay.gd
 
 func _ready() -> void:
-    if GGT.is_changing_scene(): # this will be false for the starting scene or if you start the scene with "Run current scene" or F6 shortcut during development
-        await GGT.scene_transition_finished
+    if SadShaGGT.is_changing_scene(): # this will be false for the starting scene or if you start the scene with "Run current scene" or F6 shortcut during development
+        await SadShaGGT.scene_transition_finished
     # activate your game logic here
     pass
 ```
@@ -146,7 +145,7 @@ func _ready() -> void:
 ## Restart the current scene
 
 ```gd
-GGT.restart_scene() # old params will be reused
+SadShaGGT.restart_scene() # old params will be reused
 ```
 
 ## Restart the current scene and override params
@@ -155,12 +154,12 @@ GGT.restart_scene() # old params will be reused
 var new_params = {
   "level": 5,
 }
-GGT.restart_scene_with_params(new_params)
+SadShaGGT.restart_scene_with_params(new_params)
 ```
 
-# addons/ggt-debug-shortcuts
+# addons/sadsha-ggt-debug-shortcuts
 
-`addons/ggt-debug-shortcuts` is enabled by default and it builds on top of `ggt-core`.
+`addons/sadsha-ggt-debug-shortcuts` is enabled by default and it builds on top of `sadsha-ggt-core`.
 
 By default it will set these input actions to the project:
 
@@ -172,7 +171,7 @@ By default it will set these input actions to the project:
 | "ggt_debug_quit_game"     | KEY_Q      | Closes the game                                              |
 | "ggt_debug_speedup_game"  | KEY_SHIFT  | Sets Engine.time_scale to 2 while holding key                |
 
-You can change, remove or add shortcuts in [debug_shortcuts.gd](./addons/ggt-debug-shortcuts/autoload/debug_shortcuts.gd).
+You can change, remove or add shortcuts in [debug_shortcuts.gd](./addons/sadsha-ggt-debug-shortcuts/autoload/debug_shortcuts.gd).
 
 **These shortcuts work in the editor and in debug builds and are automatically removed on release builds.**
 
@@ -259,7 +258,7 @@ If you are using Github you can take advantage of:
 
 You can read more on [Wiki - Continuos Integration][wiki_ci]
 
-[wiki_ci]: https://github.com/crystal-bit/godot-game-template/wiki/1.-Continuous-integration-(via-GitHub-Actions)
+[wiki_ci]: https://github.com/fnjlabs-arch/godot-game-template-crystal-bit/wiki/1.-Continuous-integration-(via-GitHub-Actions)
 
 # Contributing
 
@@ -267,7 +266,7 @@ If you want to help the project, create games and feel free to get in touch and 
 
 ![Discord](https://img.shields.io/discord/686600734636376102?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)
 
-You can also join [the Discord server](https://discord.gg/SA6S2Db) (`#godot-game-template` channel).
+You can also join [the Discord server](https://discord.gg/SA6S2Db) (`#sadsha-ggt-starter` channel).
 
 Before adding new features please open an issue to discuss it with other contributors.
 
@@ -287,7 +286,7 @@ Also many tools were already available in the open source community, see the [Th
 # Thanks
 
 - For support & inspiration:
-  - All the [contributors](https://github.com/crystal-bit/godot-game-template/graphs/contributors)
+  - All the [contributors](https://github.com/fnjlabs-arch/godot-game-template-crystal-bit/graphs/contributors)
   - Crystal Bit community
   - GameLoop.it
   - Godot Engine Italia

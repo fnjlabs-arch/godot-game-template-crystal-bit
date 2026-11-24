@@ -18,7 +18,7 @@ func _enter_tree():
 
 
 func _enable_plugin():
-	add_autoload_singleton("GGT_DebugShortcuts", "res://addons/ggt-debug-shortcuts/autoload/debug_shortcuts.tscn")
+	add_autoload_singleton("SadShaGGT_DebugShortcuts", "res://addons/sadsha-ggt-debug-shortcuts/autoload/debug_shortcuts.tscn")
 	register_input_mappings(func(): save_project_settings())
 
 
@@ -27,7 +27,7 @@ func _exit_tree():
 
 
 func _disable_plugin():
-	remove_autoload_singleton("GGT_DebugShortcuts")
+	remove_autoload_singleton("SadShaGGT_DebugShortcuts")
 	unregister_input_mappings()
 	save_project_settings()
 

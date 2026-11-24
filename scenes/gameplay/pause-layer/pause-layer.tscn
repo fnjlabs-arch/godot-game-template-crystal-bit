@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://do7kkb4ijqk5p" path="res://scenes/gameplay/pause-layer/pause-layer.gd" id="2"]
 [ext_resource type="Theme" uid="uid://ducfept6pmkkm" path="res://resources/theme/theme-main.tres" id="3"]
 [ext_resource type="Texture2D" uid="uid://byniue2cdd2yv" path="res://scenes/gameplay/pause-layer/pause_button.png" id="4"]
-[ext_resource type="PackedScene" uid="uid://c2jxemjmao00b" path="res://addons/ggt-core/settings/settings_menu.tscn" id="4_5vvpd"]
+[ext_resource type="PackedScene" uid="uid://c2jxemjmao00b" path="res://addons/sadsha-ggt-core/settings/settings_menu.tscn" id="4_5vvpd"]
 
 [node name="PauseLayer" type="CanvasLayer" unique_id=2102314706 node_paths=PackedStringArray("settings_menu", "margin_container")]
 process_mode = 3

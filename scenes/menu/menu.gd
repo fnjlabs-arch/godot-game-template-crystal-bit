@@ -25,12 +25,12 @@ func _on_PlayButton_pressed() -> void:
 			"val": 15
 		},
 	}
-	GGT.change_scene("res://scenes/gameplay/gameplay.tscn", params)
+	SadShaGGT.change_scene("res://scenes/gameplay/gameplay.tscn", params)
 
 
 func _on_ExitButton_pressed() -> void:
 	# gently shutdown the game
-	var transitions = get_node_or_null("/root/GGT_Transitions")
+	var transitions = get_node_or_null("/root/SadShaGGT_Transitions")
 	if transitions:
 		transitions.fade_in({
 			'show_progress_bar': false

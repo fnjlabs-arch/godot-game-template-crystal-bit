@@ -1,4 +1,4 @@
-class_name GGT_SceneData
+class_name SadShaGGT_SceneData
 extends RefCounted
 
 var path: String = ""
